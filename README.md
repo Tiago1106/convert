@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Currency Converter
 
-## Getting Started
+A currency conversion calculator that allows users to convert values from various international currencies to Brazilian reais (BRL) based on the latest exchange rates.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Monetary Format Input**: Enter values in a formatted currency style (e.g., R$ 1,000.00), and the system will automatically handle the input format with thousand separators and commas for decimals.
+- **Currency Selection**: Select from a list of supported currencies (USD, EUR, GBP, etc.) to convert to BRL.
+- **Real-Time Exchange Rate Fetching**: The application retrieves exchange rates using an external API (Exchangerate API) with **React Query** and **Ky**, ensuring the latest data is always used.
+- **Conversion Display**: After selecting the amount and currency, the app will display the converted amount in reais (BRL).
+- **Responsive Design**: A clean and responsive UI to provide a seamless user experience across devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React**: JavaScript library for building user interfaces.
+- **Next.js**: React framework for building server-side rendered and statically generated web applications.
+- **React Query**: Data-fetching and state management tool for React.
+- **Ky**: Lightweight HTTP client for making API requests.
+- **Next Theme**: A library for easily managing and toggling dark and light themes in a Next.js project.
+- **Shadcn-ui**: A UI component library for building modern and customizable user interfaces with components like buttons, cards, and inputs.
+- **Lucide React**: A collection of open-source, customizable icons for React applications.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/your-username/currency-converter.git
+   cd currency-converter
+   ```
+2. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   yarn install
+   ```
+3. Run the application locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   yarn dev
+   ```
 
-## Deploy on Vercel
+4. Open your browser and navigate to http://localhost:3000 to use the currency converter.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Usage
+1. Enter the value to be converted in the input field.
+2. Choose the source currency (e.g., USD, EUR, GBP) from the dropdown.
+3. Click on the Convert to Reais button to see the converted value in BRL.
