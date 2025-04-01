@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const monomaniac = Monomaniac_One({
-  variable: '--font-monomaniac',
+const monomaniac = Monomaniac_One({
+  variable: "--font-monomaniac",
   subsets: ["latin"],
   weight: "400",
 });
