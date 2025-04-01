@@ -2,8 +2,9 @@
 
 A currency conversion calculator that allows users to convert values from various international currencies to Brazilian reais (BRL) based on the latest exchange rates.
 
-![Preview](./public/no-result.png)
-![Preview](./public/with-result.png)
+## Live Demo
+
+You can check out the live demo of the project at [https://convert-tan.vercel.app/](https://convert-tan.vercel.app/).
 
 ## Features
 
