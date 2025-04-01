@@ -2,8 +2,8 @@
 
 A currency conversion calculator that allows users to convert values from various international currencies to Brazilian reais (BRL) based on the latest exchange rates.
 
-![Preview](./no-result.png)
-![Preview](./with-result.png)
+![Preview](./public/no-result.png)
+![Preview](./public/with-result.png)
 
 ## Features
 
