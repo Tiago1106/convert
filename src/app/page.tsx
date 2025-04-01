@@ -45,11 +45,12 @@ export default function Home() {
       <Card className={clsx("w-[350px]", { "pb-0": converted && value.length > 0 })}>
         <CardHeader className="gap-5">
           <div className="flex flex-col space-y-1.5">
-            <Label htmlFor="name">Valor</Label>
+            <Label htmlFor="value">Valor</Label>
             <Input
-              id="name"
+              id="value"
               placeholder="Digite o valor"
               value={value}
+              type="number"
               onChange={(e) => setValue(e.target.value)}
             />
           </div>
@@ -66,7 +67,7 @@ export default function Home() {
               </SelectContent>
             </Select>
           </div>
-          <Button variant="default" className="mt-5" onClick={() => handleConvert()}>
+          <Button variant="default" className="mt-5" disabled={!value || !coin || isNaN(Number(value))} onClick={() => handleConvert()}>
             Converter em Reais
           </Button>
         </CardHeader>
