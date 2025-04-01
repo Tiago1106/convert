@@ -2,6 +2,9 @@
 
 A currency conversion calculator that allows users to convert values from various international currencies to Brazilian reais (BRL) based on the latest exchange rates.
 
+![Preview](./no-result.png)
+![Preview](./with-result.png)
+
 ## Features
 
 - **Monetary Format Input**: Enter values in a formatted currency style (e.g., R$ 1,000.00), and the system will automatically handle the input format with thousand separators and commas for decimals.
